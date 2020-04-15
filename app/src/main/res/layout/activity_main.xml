@@ -35,10 +35,9 @@
         android:id="@+id/rnd_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:padding="16dp"
         android:text="0"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/Round"
         app:layout_constraintTop_toBottomOf="@+id/display" />
 
@@ -148,6 +147,56 @@
         app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_minus" />
+
+    <TextView
+        android:id="@+id/txt_target"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:text="Target"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/comp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_target"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Computer guess"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/txt_target" />
+
+    <TextView
+        android:id="@+id/txt_compguess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/comp"
+        app:layout_constraintTop_toBottomOf="@+id/comp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
