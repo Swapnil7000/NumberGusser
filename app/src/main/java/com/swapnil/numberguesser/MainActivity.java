@@ -62,8 +62,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void numDecrease(View view) {
-        txt_num--;
-        num.setText(txt_num + "");
+        if (txt_num <= 0) {
+            txt_num = 0;
+            num.setText(txt_num + "");
+            Toast.makeText(this, "You cannot enter negative number", Toast.LENGTH_SHORT).show();
+
+        } else {
+            txt_num--;
+            num.setText(txt_num + "");
+        }
 
     }
 
